@@ -1,0 +1,715 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#resp-menu{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 40px;
+    display: none;
+}
+
+#resp-menu i{
+    width: 90%;
+    text-align: end;
+}
+
+#resp-menu a{
+    width: 60%;
+    color: white;
+    margin-top: 20px;
+}
+
+header{
+    height: 90px;
+}
+
+#nav-top{
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    position: relative;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+ i{
+    margin-right: 10px;
+}
+
+.icons i:last-child{
+    margin-right: 0;
+}
+
+#nav-top h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.links a:first{
+    margin-left: 0;
+}
+
+#resp-bar{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+nav{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    position: relative;
+}
+
+.logo{
+    height: 40px;
+    width: 110px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+nav li a:first-child{
+    color: rgb(185, 164, 40);
+}
+
+nav li a:hover{
+    color: rgb(185, 164, 40);
+}
+
+nav .links a{
+    color: black;
+}
+
+nav .links a i{
+    margin-right: 20px;
+    font-size: 30px;
+    position: relative;
+}
+
+nav .links i span{
+    color: white;
+    background-color: rgb(199, 52, 52);
+    font-size: 13px;
+    padding: 2px 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: -12px;
+}
+
+#search-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    display: none;
+    border-bottom: 1px solid black; 
+}
+
+#search-sec input{
+    width: 85%;
+    padding: 6px 10px;
+}
+
+#search-sec i{
+    font-size: 25px;
+}
+
+ /* Main Slide */
+
+ #main-slide{
+    height: 100%;
+    position: relative;
+}
+
+
+.swiper-container {
+  position: relative;
+}
+
+
+#main-slide{
+    height: 100%;
+    position: relative;
+}
+
+#main-cont{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    overflow: hidden;
+}
+
+#second-cont{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 78, 27, 0.753);
+    position: absolute;
+    z-index: 9;
+}
+
+#main-slide .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+    background-color: transparent;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#main-slide .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#swipebtn{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translate(0, -50%);
+    z-index: 99;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+#swipebtn i{
+    color: white;
+    font-size: 30px;
+    outline: none;
+    padding: 5px 10px;
+}
+
+#swipebtn i:hover{
+    font-size: 40px;
+}
+
+
+#text{
+    width: 70px;
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+    color: white;
+    font-size: 20px;
+}
+
+#text::first-letter{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#vertical-swiper{
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 99;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#vertical-swiper .swiper-slide{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#vertical-swiper .swiper-slide p{
+    font-size: 60px;
+    text-align: start;
+    color: #C6A85C;
+    font-weight: 500;
+}
+
+#vertical-swiper .swiper-slide button{
+    color: white;
+    background-color: black;
+    padding: 15px 30px;
+    border: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* coolprice section */
+
+#coolPrize{
+    width: 90%;
+    height: 90%;
+    background-color: #ECF0F6;
+    margin: auto;
+    margin-top: 40px;
+    padding: 50px 30px;
+    display: flex;
+    position: relative;
+}
+
+.offerPost{
+    width: 250px;
+    height: 80%;
+    background-color: #49ACD5;
+    padding: 30px 0;
+    position: absolute;
+}
+
+.offerPost img{
+    width: 100px;
+}
+
+
+.containt{
+    margin: 30px 0 0 10px;
+    color: white;
+    width: 80%;
+}
+
+.containt p{
+    margin: 20px 0 20px 0;
+    line-height: 30px;
+}
+
+.right{
+    width: fit-content;
+    margin: 0 40px;
+    margin-left: 300px;
+    padding: 0 20px;
+}
+
+#coolPrize .right .containt{
+    color: rgb(65, 65, 65);
+    margin-left: 50px;
+}
+
+.right .containt p{
+    margin: 10px 0;
+    line-height: 25px;
+}
+
+/* Jssor slider style */
+
+
+#medium-slider{
+    height: fit-content;
+    width: 820px;
+    margin-top: 60px;
+}
+
+#medium-slider .swiper-slide{
+    width: 220px !important;
+    height: 300px;
+}
+
+#medium-slider .swiper-slide>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Testimonials Start */
+
+#testimonials{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/back2.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+}
+
+#testimonial-left{
+    width: 40%;
+    height: 100%;
+    padding: 60px 0 0 0;
+    position: relative;
+}
+#slideshow {
+    position: relative;
+    width: 380px;
+    height: 550px;
+    margin-left: 20%;
+  }
+  
+  #slideshow > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #slideshow-img >img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  #testimonial-capture{
+      width: 150px;
+      height: 150px;
+      background-image: url('testimonialCapture.PNG');
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      right: 40px;
+      top: 130px;
+      z-index: 9;
+  }
+
+  #testimonial-right{
+      width: 60%;
+      height: 100%;
+      padding: 40px 0;
+      position: relative;
+  }
+
+  #testimonial-right> h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+
+  .resp-p{
+      color: white;
+      display: none;
+      margin-top: 20px;
+      line-height: 30px;
+  }
+
+  /* testimonial text slider */
+
+
+  #testimonial-right .container{
+      width: 100%;
+      color: white;
+  }
+
+  #testimonial-right #textslider{
+      width: 100%;
+  }
+
+  #textback{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+#small-slider{
+    height: fit-content;
+    width: 380px;
+    position: absolute;
+    bottom: 200px;
+    right: 150px;
+}
+
+.small-slide{
+    width: 110px !important;
+    height: 130px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+ 
+  
+
+@media(max-width: 700px){
+
+    header .icons{
+        display: none;
+    }
+
+    header #nav-top .links{
+        display: none;
+    }
+
+    header #nav-top{
+        padding: 0 10px;
+    }
+
+    header #nav-top h3{
+        font-size: 20px;
+        width: 90%;    
+    }
+
+    #resp-bar{
+        display: block;
+    }
+
+    header nav{
+        padding: 0 10px;
+    }
+
+    header nav .links>i{
+        display: none;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    #main-slide{
+        height: 70vh;
+        position: relative;
+    }
+
+    #main-cont{
+        height: 50%;
+        width: 70%;
+        left: 40%;
+    }
+
+    #second-cont{
+        width: 45%;
+    }
+
+    #vertical-swiper{
+        width: 50%;
+        height: 100%;
+        left: 10px;
+        top: 20px;
+    }
+
+    #vertical-swiper .swiper-slide p{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    #swipebtn{
+        right: 20px;
+    }
+
+    #search-sec{
+        display: flex;
+    }
+    
+    #coolPrize{
+        width: 100%;
+        padding: 40px 20px;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #coolPrize .right{
+        margin: 0 0;
+        margin-left: 0;
+        margin-top: 550px;
+        padding: 0;
+    }
+
+    #coolPrize .right .containt{
+        width: 100vw;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #coolPrize .right .containt h1{
+        width: 70%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    #coolPrize .right .containt p{
+        font-size: 18px;
+        width: 90%;
+        text-align: justify;
+    }
+
+    #coolPrize .offerPost{
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 500px;
+        width: 80vw;
+    }
+
+    #medium-slider{
+        width: 100vw;
+    }
+
+    #testimonials{
+        height: 170vh;
+        flex-direction: column;
+        background-image: url('/images/resp-back2.png');
+        overflow: hidden;
+    }
+
+    #testimonial-left, #testimonial-right{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #testimonial-left{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #testimonial-capture{
+        display: none;
+    }
+
+    #testimonial-left #slideshow{
+        margin: auto;
+
+    }
+
+    #testimonial-right{
+        height: 40%;
+        padding: 10px;
+    }
+
+    #testimonial-right h1{
+        margin-left: 0;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+
+    #testimonials #quotos-slider{
+        display: none;
+    }
+
+    #small-slider{
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%, 0);
+    }
+   
+    .resp-p{
+    
+        display: block;
+    }
+    
+}
