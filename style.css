@@ -657,7 +657,6 @@ nav .links i span{
     #testimonials{
         height: 170vh;
         flex-direction: column;
-        background-image: url('/images/resp-back2.png');
         overflow: hidden;
     }
 
